@@ -3,6 +3,7 @@ if ( process.env.NEW_RELIC_ENABLED ) {
   require( "newrelic" );
 }
 
+
 const restify = require('restify');
 const applyRoutes = require('./routes');
 const logger = require('./lib/logger')
@@ -14,6 +15,7 @@ const server = restify.createServer({
   version: package.version,
   log: logger,
 });
+
 
 server.pre(restify.pre.sanitizePath());
 server.use(restify.acceptParser(server.acceptable));
@@ -33,3 +35,4 @@ if (!module.parent) {
     console.log('%s listening at %s', server.name, server.url);
   });
 }
+
