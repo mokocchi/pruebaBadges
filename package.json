@@ -1,0 +1,44 @@
+{
+  "name": "badgekit-api",
+  "version": "0.2.22",
+  "description": "A badge issuing platform",
+  "author": "Mozilla OpenBadges",
+  "license": "MPLv2",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "node app",
+    "test": "tap test/*.test.js",
+    "lint": "jshint app/*"
+  },
+  "dependencies": {
+    "mysql": "~2.0.0-alpha9",
+    "restify": "~2.8.2",
+    "streamsql": "~0.8.3",
+    "validator": "~2.0.0",
+    "xtend": "~2.1.1",
+    "bluebird": "~1.0.8",
+    "bunyan": "~0.22.1",
+    "jws": "~0.2.5",
+    "request": "~2.33.0",
+    "underscore": "~1.6.0",
+    "newrelic": "~1.4.0",
+    "async": "~0.2.10",
+    "db-migrate": "~0.6.3",
+    "optimist": "~0.6.1",
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": {
+    "concat-stream": "~1.4.1",
+    "form-data": "~0.1.2",
+    "jshint": "~2.3.0",
+    "tap": "~0.4.6"
+  },
+  "homepage": "https://github.com/mozilla/badgekit-api",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mozilla/badgekit-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mozilla/badgekit-api/issues"
+  }
+}
